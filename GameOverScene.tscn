@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://PNG/GameOverScene.jpg" type="Texture" id=1]
+[ext_resource path="res://Button.gd" type="Script" id=2]
+
+[node name="GameOverScene" type="Control"]
+
+[node name="Button" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -86.0
+margin_top = -48.0
+margin_right = 2189.0
+margin_bottom = 698.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Button"]
+position = Vector2( 1063.5, 434 )
+scale = Vector2( 8.70455, 9.05882 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]
